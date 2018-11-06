@@ -5,32 +5,38 @@
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <div id="FundingWidget"></div>
-  <div id="Updates"></div>
-  <div id="Comments"></div>
-  <div id="Rewards"></div>
+  <div class="nav"></div>
+  <div class="container">
+    <div class="item dummyImg">
+      <img src="https://picsum.photos/850/500">
+    </div>
+    <div id="FundingWidget" class="item"></div>
+    <div id="Updates" class="item"></div>
+    <div id="Rewards" class="item"></div>
+    <div id="Comments" class="item"></div>
+  </div>
   <script src="/lib/react.development.js"></script>
   <script src="/lib/react-dom.development.js"></script>
-  <script src="http://localhost:3001/app.js"></script>
-  <script src="http://localhost:3002/app.js"></script>
-  <script src="http://localhost:3003/app.js"></script>
-  <script src="http://localhost:3004/app.js"></script>
+  <script src="http://localhost:3001/bundle.js"></script>
+  <script src="http://localhost:3002/bundle.js"></script>
+  <script src="http://localhost:3003/bundle.js"></script>
+  <script src="http://localhost:3004/bundle.js"></script>
   <script>
-    ReactDOM.render(
-      React.createElement(FundingWidget),
-      document.getElementById('FundingWidget')
-    );
-    ReactDOM.render(
-      React.createElement(Updates),
-      document.getElementById('Updates')
-    );
     ReactDOM.render(
       React.createElement(Comments),
       document.getElementById('Comments')
     );
     ReactDOM.render(
+      React.createElement(FundingWidget),
+      document.getElementById('FundingWidget')
+    );
+    ReactDOM.render(
       React.createElement(Rewards),
       document.getElementById('Rewards')
+    );
+    ReactDOM.render(
+      React.createElement(Updates),
+      document.getElementById('Updates')
     );
   </script>
 </body>
