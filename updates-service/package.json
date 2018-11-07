@@ -1,0 +1,87 @@
+{
+  "name": "updates-service",
+  "description": "> Project description",
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=6.13.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "start": "nodemon server/server.js",
+    "dropdb": "mysql -u root < database/schema.sql",
+    "manualdb": "mysql -u root",
+    "seed": "node database/seedGenerator.js",
+    "test": "jest",
+    "testWatch": "jest --watch"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "faker": "^4.1.0",
+    "moment": "^2.22.2",
+    "morgan": "^1.9.1",
+    "mysql": "^2.16.0",
+    "mysql2": "^1.6.1",
+    "prop-types": "^15.6.2",
+    "react": "^16.6.0",
+    "react-dom": "^16.6.0",
+    "sequelize": "^4.41.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-jest": "^23.6.0",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^1.0.1",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.6.0",
+    "eslint": "^5.7.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor.git",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^2.0.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^23.6.0",
+    "jest-enzyme": "^7.0.0",
+    "morgan": "^1.9.1",
+    "prettier": "^1.14.3",
+    "react-test-renderer": "^16.6.0",
+    "regenerator-runtime": "^0.12.1",
+    "sinon": "^7.1.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.23.0",
+    "webpack-cli": "^3.1.2"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FEC-RSG/updates-service.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/FEC-RSG/updates-service/issues"
+  },
+  "homepage": "https://github.com/FEC-RSG/updates-service#readme",
+  "jest": {
+    "verbose": true,
+    "setupTestFrameworkScriptFile": "jest-enzyme",
+    "testEnvironment": "enzyme",
+    "testEnvironmentOptions": {
+      "enzymeAdapter": "react16"
+    },
+    "moduleNameMapper": {
+      "\\.(css|less)$": "identity-obj-proxy"
+    }
+  }
+}
