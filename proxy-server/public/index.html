@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Barlow|Modak|Raleway:300" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <div class="main-container">
+    <div class="nav-container">
+      <div id="navExplore" class="item">Explore</div>
+      <div id="navStartProject" class="item">Start a project</div>
+      <div id="navLogo" class="item">KICKSTAND</div>
+      <div id="navSearch" class="item">Search <i class="fas fa-search" /></i></div>
+      <div id="navLogin" class="item">Sign in</div>
+    </div>
+    <div class="title-container">
+      <img class="authorAvatar item" src="/img/generic_Avatar.jpg">
+      <div class="authorInfo item">
+        <div class="authorName">By Saul Goodman</div>
+        <div class="authorCreated">4 created</div>
+      </div>
+      <div class="projectTitle item">The Generic Campaign</div>
+      <div class="titleDesc item">This is just placeholder text for the title section of some generic campaign and serves no other purpose than to take up space</div>
+    </div>
+    <div class="body-container">
+      <div class="item dummyImg">
+        <img src="/img/default_img.jpg">
+      </div>
+      <div id="FundingWidget" class="item"></div>
+      <div id="Updates" class="item"></div>
+      <div id="Rewards" class="item"></div>
+      <div id="Comments" class="item"></div>
+    </div>
+  </div>
+  <script src="/lib/react.development.js"></script>
+  <script src="/lib/react-dom.development.js"></script>
+  <script src="http://localhost:3001/bundle.js"></script>
+  <script src="http://localhost:3002/bundle.js"></script>
+  <script src="http://localhost:3003/bundle.js"></script>
+  <script src="http://localhost:3004/bundle.js"></script>
+  <script>
+    ReactDOM.render(
+      React.createElement(Comments),
+      document.getElementById('Comments')
+    );
+    ReactDOM.render(
+      React.createElement(FundingWidget),
+      document.getElementById('FundingWidget')
+    );
+    ReactDOM.render(
+      React.createElement(Rewards),
+      document.getElementById('Rewards')
+    );
+    ReactDOM.render(
+      React.createElement(Updates),
+      document.getElementById('Updates')
+    );
+  </script>
+</body>
+</html>

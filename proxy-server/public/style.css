@@ -1,0 +1,171 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "title"
+    "mainbody";
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 5% 8% 74% 8% 5%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "explore start logo search login";
+  grid-area: nav;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  border-bottom: solid 1px;
+  font-family: "Barlow", sans-serif;
+}
+
+#navExplore {
+  grid-area: explore;
+}
+
+#navStartProject {
+  grid-area: start;
+}
+
+#navExplore:hover {
+  color: rgb(3, 115, 98);
+  cursor: pointer;
+}
+
+#navStartProject:hover {
+  color: rgb(3, 115, 98);
+  cursor: pointer;
+}
+
+#navLogo {
+  grid-area: logo;
+  justify-self: center;
+  font-family: "Modak", cursive;
+  font-size: 30px;
+  color: rgb(3, 71, 82);
+}
+
+#navSearch {
+  grid-area: search;
+  justify-self: end;
+}
+
+#navLogin {
+  grid-area: login;
+  justify-self: end;
+}
+
+#navLogo:hover {
+  cursor: pointer;
+}
+
+#navSearch:hover {
+  color: rgb(3, 115, 98);
+  cursor: pointer;
+}
+
+#navLogin:hover {
+  color: rgb(3, 115, 98);
+  cursor: pointer;
+}
+
+.title-container {
+  display: grid;
+  grid-area: title;
+  grid-template-columns: 11% 14% 45% 30%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas:
+    ". authorPic title ."
+    ". authorInfo titleDesc .";
+  padding-top: 3%;
+  padding-bottom: 3%;
+  align-items: baseline;
+}
+
+.authorAvatar {
+  grid-area: authorPic;
+}
+
+.authorAvatar:hover {
+  cursor: pointer;
+}
+
+.authorInfo {
+  grid-area: authorInfo;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+.authorName {
+  padding-bottom: 2%;
+}
+
+.authorName:hover {
+  cursor: pointer;
+}
+
+.authorCreated {
+  color: rgb(101, 105, 105);
+}
+
+.authorCreated:hover {
+  color: rgb(40, 40, 40);
+  cursor: pointer;
+}
+
+.projectTitle {
+  grid-area: title;
+  font-family: "Barlow", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.titleDesc {
+  grid-area: titleDesc;
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  color: rgb(101, 105, 105);
+}
+
+.body-container {
+  display: grid;
+  grid-template-columns: 65% 3% 32%;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "img . fundWidget"
+    "updates . rewards"
+    "comments . .";
+  grid-area: mainbody;
+  margin-top: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.dummyImg {
+  grid-area: img;
+  justify-self: end;
+}
+
+#FundingWidget {
+  grid-area: fundWidget;
+}
+
+#Updates {
+  grid-area: updates;
+}
+
+#Rewards {
+  grid-area: rewards;
+}
+
+#Comments {
+  grid-area: comments;
+}
