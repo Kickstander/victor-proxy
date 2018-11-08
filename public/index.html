@@ -28,10 +28,10 @@
       <div class="item dummyImg">
         <img src="/img/default_img.jpg">
       </div>
-      <div id="FundingWidget" class="item"></div>
+      <div id="funding-widget" class="item"></div>
       <div id="Updates" class="item"></div>
-      <div id="Rewards" class="item"></div>
-      <div id="Comments" class="item"></div>
+      <div id="rewards" class="item"></div>
+      <div id="comments" class="item"></div>
     </div>
   </div>
   <script src="/lib/react.development.js"></script>
@@ -40,23 +40,5 @@
   <script src="http://localhost:3002/bundle.js"></script>
   <script src="http://localhost:3003/bundle.js"></script>
   <script src="http://localhost:3004/bundle.js"></script>
-  <script>
-    ReactDOM.render(
-      React.createElement(Comments),
-      document.getElementById('Comments')
-    );
-    ReactDOM.render(
-      React.createElement(FundingWidget),
-      document.getElementById('FundingWidget')
-    );
-    ReactDOM.render(
-      React.createElement(Rewards),
-      document.getElementById('Rewards')
-    );
-    ReactDOM.render(
-      React.createElement(Updates),
-      document.getElementById('Updates')
-    );
-  </script>
 </body>
 </html>

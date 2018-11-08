@@ -154,7 +154,7 @@ body {
   justify-self: end;
 }
 
-#FundingWidget {
+#funding-widget {
   grid-area: fundWidget;
 }
 
@@ -162,10 +162,10 @@ body {
   grid-area: updates;
 }
 
-#Rewards {
+#rewards {
   grid-area: rewards;
 }
 
-#Comments {
+#comments {
   grid-area: comments;
 }
