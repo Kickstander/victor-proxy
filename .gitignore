@@ -22,3 +22,5 @@ coverage
 
 Dockerfile
 .dockerignore
+
+newrelic.js
